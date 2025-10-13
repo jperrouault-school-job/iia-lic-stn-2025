@@ -12,7 +12,7 @@ void fonctionQuiRetourneRien() {
 
 // Une fonction qui retourne un entier et qui en attend 2
 int fonctionQuiRetourneUnEntier(int a, int b) {
-
+    return 10;
 }
 
 // Pour appeler la fonction :

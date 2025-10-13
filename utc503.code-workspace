@@ -1,5 +1,9 @@
 {
-	"folders": [],
+	"folders": [
+		{
+			"path": "base"
+		}
+	],
 	"settings": {
 		"java.jdt.ls.java.home": "/usr/lib/jvm/jdk-21.0.5-oracle-x64/",
 		"terminal.integrated.defaultProfile.linux": "zsh",

@@ -2,10 +2,13 @@
 	"folders": [
 		{
 			"path": "base"
+		},
+		{
+			"path": "procedural"
 		}
 	],
 	"settings": {
-		"java.jdt.ls.java.home": "/usr/lib/jvm/jdk-21.0.5-oracle-x64/",
+		"java.jdt.ls.java.home": "/usr/lib/jvm/jdk-21.0.7-oracle-x64/",
 		"terminal.integrated.defaultProfile.linux": "zsh",
 		"terminal.integrated.fontFamily": "Source Code Pro for Powerline",
 		"terminal.integrated.fontSize": 16,

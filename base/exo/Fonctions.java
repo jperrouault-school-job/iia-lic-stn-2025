@@ -44,3 +44,5 @@ void afficher(int[] tab) {
 }
 
 afficher(monTab);
+
+int a = Integer.parseInt(System.console().readLine());

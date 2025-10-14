@@ -38,5 +38,6 @@ public class AppGestionInfo {
 
         System.out.println("Le serveur a l'adresse IP : " + serveur1.getAdresseIp());
 
+
     }
 }

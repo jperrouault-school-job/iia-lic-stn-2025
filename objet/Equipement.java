@@ -1,5 +1,6 @@
 // extends Object est implicite : tout est Object
-public class Equipement {
+// La classe sera abstraite, on ne pourra plus l'instancier
+public abstract class Equipement {
     // Les attributs
     private int[] adresseIp = new int[4];
     private String localisation;
@@ -50,13 +51,12 @@ public class Equipement {
 
     // Les méthodes (les actions) qu'on peut faire avec un Routeur
     public void demarrer() {
-        System.out.println("Le serveur démarre ...");
+        System.out.println("L'équipement démarre ...");
     }
 
-    public boolean arreter() {
-        System.out.println("Le serveur est arrêté ....");
-        return true;
-    }
-
+    // Avec "abstract", je dis que la méthode existe
+    // Mais je ne dis pas comment elle se réalise
+    // Ce sera aux classes filles de l'implémenter
+    public abstract boolean arreter();
 
 }

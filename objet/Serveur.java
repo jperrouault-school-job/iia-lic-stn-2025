@@ -8,4 +8,14 @@ public class Serveur extends Equipement {
     public void setServices(String[] services) {
         this.services = services;
     }
+
+    @Override
+    public void demarrer() {
+        System.out.println("Le serveur démarre ...");
+    }
+
+    public boolean arreter() {
+        System.out.println("Le serveur arrête ...");
+        return true;
+    }
 }

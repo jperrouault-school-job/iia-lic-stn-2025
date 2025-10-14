@@ -1,3 +1,4 @@
+// extends Object est implicite : tout est Object
 public class Equipement {
     // Les attributs
     private int[] adresseIp = new int[4];

@@ -31,5 +31,12 @@ public class AppGestionInfo {
 
         System.out.println("Le routeur 1 a l'adresse IP " + routeur1.getAdresseIp());
 
+
+        Serveur serveur1 = new Serveur();
+
+        serveur1.setAdresseIp(192, 168, 0, 12);
+
+        System.out.println("Le serveur a l'adresse IP : " + serveur1.getAdresseIp());
+
     }
 }

@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "procedural"
+		},
+		{
+			"path": "objet"
 		}
 	],
 	"settings": {

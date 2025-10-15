@@ -15,5 +15,9 @@ public class AppExo5 {
             .filter(val -> val > 25 )
             .forEach(System.out::println)
         ;
+
+        System.out.println("-----");
+
+        nombres.forEach(System.out::println);
     }
 }

@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
 
-public class AppExo1 {
+public class AppExo2 {
     public static void main(String[] args) {
         List<String> prenoms = new ArrayList<>();
 
@@ -13,16 +12,16 @@ public class AppExo1 {
         prenoms.add("Jérôme");
 
         // Solution #1
-        prenoms.forEach(System.out::println);
+        prenoms.stream()
+            .map(prenom -> prenom.toUpperCase())
+            .forEach(System.out::println)
+        ;
 
         // Solution #2
-        Consumer<String> print = (prenom) -> {
-            System.out.println(prenom);
-        };
+        prenoms.stream()
+            .map(String::toUpperCase)
+            .forEach(System.out::println)
+        ;
 
-        prenoms.forEach(print);
-
-        // Solution #3
-        prenoms.forEach(prenom -> System.out.println(prenom));
     }
 }

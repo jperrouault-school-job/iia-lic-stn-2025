@@ -25,5 +25,23 @@ public class AppFonctionnelle {
 
         Consumer<String> print = System.out::println;
         print.accept(resultat + "");
+
+        operation(maths::soustraire, 5, 8);
+        operation(maths::additionner, 5, 18);
+
+        // Créer une fonction "lambda" qui sera stockée dans une variable
+        BiFunction<Integer, Integer, Integer> multiplication = (a, b) -> {
+            return a * b;
+        };
+
+        operation(multiplication, 5, 10);
+
+        // Créer une fonction "lamdba" anonyme, qui ne sera pas stockée ici
+        operation((a, b) -> a / b, 5, 4);
+    }
+
+    static void operation(BiFunction<Integer, Integer, Integer> ope, int a, int b) {
+        int resultat = ope.apply(a, b);
+        System.out.println(resultat);
     }
 }

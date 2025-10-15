@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "objet"
+		},
+		{
+			"path": "fonctionnel"
 		}
 	],
 	"settings": {

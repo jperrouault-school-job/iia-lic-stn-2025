@@ -39,6 +39,13 @@ public class AppExo8 {
             .get()
         ;
 
+        // Solution #5
+        int resultat5 = nombres.stream()
+            .mapToInt(Integer::valueOf)
+            .min()
+            .getAsInt()
+        ;
+
         System.out.println(resultat);
         System.out.println(resultat2);
     }

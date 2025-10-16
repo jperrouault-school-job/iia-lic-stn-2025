@@ -1,5 +1,9 @@
 package fr.formation;
 
+import java.time.Duration;
+
+import reactor.core.publisher.Flux;
+
 // La programmation réactive permet de réagir directement après un évènement
 
 // En programmation orientée objet, on y décrit des objets réels, qui contiennent des données
@@ -14,5 +18,21 @@ public class AppExemple {
     // > Ce serait notamment le cas dans la manipulation des Threads
     public static void main(String[] args) throws Exception {
         // Le code viendra ici comme d'habitude
+
+        // On crée un Flux de 6 éléments, et on les publie toutes les 500 ms
+        Flux<String> fluxMots = Flux
+            .just("Quelques", "mots", "qui", "feront", "le", "job")
+            .delayElements(Duration.ofMillis(500))
+        ;
+
+        fluxMots
+            .map(String::toUpperCase)
+            // Ici, le "subscribe" c'est un peu comme le "forEach" d'une List
+            // A chaque élément, on les imprimera dans la console
+            .subscribe(System.out::println)
+        ;
+
+        // On fait une pause de 10 secs
+        Thread.sleep(10_000);
     }
 }

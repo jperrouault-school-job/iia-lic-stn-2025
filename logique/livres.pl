@@ -32,7 +32,7 @@ livre_nationalite(X, Z) :- nationalite(Y, Z) , a_ecrit(Y, X).
 ?- a_ecrit('Pierre Bottero', X).
 
 % Est-ce que Harry Potter a été écrit par J.K. Rowling ?
-?- a_ecrit('J.K. Rowling', 'Harry Potter et la chambre des secrets')?
+?- a_ecrit('J.K. Rowling', 'Harry Potter et la chambre des secrets').
 
 % Est-ce que L'Autre est français ?
 ?- livre_francais('L\'Autre, La huitième porte').

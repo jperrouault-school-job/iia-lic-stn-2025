@@ -11,6 +11,8 @@ public class AppExo4 {
         flux
             // .map(saisie -> saisie.length())
             .map(String::length)
+
+            // "scan" est un peu comme le "reduce", sauf que "reduce" ne rendra qu'une seule valeur
             // .scan(0, (total, nb) -> total + nb)
             // .scan((total, nb) -> total + nb)
             // .scan(0, Integer::sum)

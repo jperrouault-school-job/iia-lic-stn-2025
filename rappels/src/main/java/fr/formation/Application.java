@@ -2,6 +2,8 @@ package fr.formation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class Application {
     public static void main(String[] args) {
@@ -27,5 +29,9 @@ public class Application {
 
             .forEach(System.out::println)
         ;
+
+        // Pour stocker des références aux méthodes
+        Supplier<Class> fncGetClass = formateur::getClass;
+        Consumer<String> fncPrint = System.out::println;
     }
 }

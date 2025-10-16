@@ -1,5 +1,5 @@
 // En programmation orientée objet, on y décrit des objets réels, qui contiennent des données
-// En programmation fonctionnelle, on y décrit des transformations de donneés
+// En programmation fonctionnelle, on y décrit des transformations de données
 
 // Chaque fonction doit être une fonction pure
 // -> Une même entrée produira la même sortie
